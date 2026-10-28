@@ -1,0 +1,25 @@
+[Unit]
+Description=Bextim raffle marketplace
+After=network.target
+
+[Service]
+Type=simple
+User=bextim
+Group=bextim
+WorkingDirectory=/opt/bextim
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=3000
+Environment=DATA_DIR=/var/lib/bextim
+Environment=TRUST_PROXY=loopback
+ExecStart=/usr/bin/node --disable-warning=ExperimentalWarning src/server.js
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/bextim
+
+[Install]
+WantedBy=multi-user.target

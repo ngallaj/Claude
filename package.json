@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node --disable-warning=ExperimentalWarning src/server.js",
     "seed": "node --disable-warning=ExperimentalWarning src/seed.js",
-    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js",
+    "make-admin": "node --disable-warning=ExperimentalWarning src/make-admin.js",
+    "backup": "node --disable-warning=ExperimentalWarning src/backup.js"
   },
   "engines": {
     "node": ">=22.13"

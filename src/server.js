@@ -189,7 +189,8 @@ if (require.main === module) {
   setInterval(runTick, 30_000).unref();
 
   const port = Number(process.env.PORT ?? 3000);
-  app.listen(port, () => console.log(`Bəxtim.az running on http://localhost:${port}`));
+  const host = process.env.HOST ?? '0.0.0.0'; // use 127.0.0.1 behind a reverse proxy
+  app.listen(port, host, () => console.log(`Bəxtim.az running on http://${host}:${port}`));
 }
 
 module.exports = { createApp };

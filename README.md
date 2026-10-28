@@ -41,8 +41,15 @@ Demo accounts after seeding:
 - Admin: `050 000 00 00` / `admin123`
 - User: `050 111 22 33` / `demo123` (other demo users: `055 222 33 44`, `070 333 44 55`, `077 444 55 66`, `099 555 66 77`)
 
-Environment variables: `PORT` (default 3000), `DATA_DIR` (default `./data`: SQLite file and uploads),
-`NODE_ENV=production` (secure cookies), `TRUST_PROXY` (when behind nginx and similar proxies).
+Environment variables: `PORT` (default 3000), `HOST` (default `0.0.0.0`), `DATA_DIR` (default `./data`: SQLite
+file and uploads), `NODE_ENV=production` (secure cookies), `TRUST_PROXY` (when behind Caddy, nginx and similar proxies).
+
+## Deploy
+See **[docs/DEPLOY.md](docs/DEPLOY.md)**. On an Ubuntu server, one command sets up the app, HTTPS and daily backups:
+
+```bash
+sudo bash deploy/install.sh yourdomain.az you@example.com
+```
 
 ## Structure
 ```
@@ -51,6 +58,9 @@ src/auth.js     phone/password accounts, sessions
 src/db.js       SQLite schema (money stored in qəpik)
 src/server.js   Express API + static frontend + 30s scheduler (draws/refunds/auto-release)
 src/seed.js     demo data
+src/make-admin.js  give a registered user admin rights
+src/backup.js   database + photo backup (run daily by the installer)
+deploy/         install script and systemd service for an Ubuntu VPS
 public/         single-page frontend (vanilla JS, no build step), i18n.js has AZ/RU/EN
 test/           node:test suite for the raffle rules
 ```
