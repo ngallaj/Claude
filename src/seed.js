@@ -8,7 +8,7 @@ const { RaffleService } = require('./raffle');
 
 const dataDir = process.env.DATA_DIR ?? path.join(__dirname, '..', 'data');
 fs.mkdirSync(path.join(dataDir, 'uploads'), { recursive: true });
-const db = open(path.join(dataDir, 'pusk.db'));
+const db = open(path.join(dataDir, 'bextim.db'));
 const auth = new AuthService(db);
 const svc = new RaffleService(db);
 

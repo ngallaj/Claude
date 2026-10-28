@@ -1,5 +1,5 @@
 'use strict';
-/* Püşk.az single-page frontend (no build step). Hash routes: #/, #/r/:id, #/new, #/me, #/how, #/verify/:id, #/admin */
+/* Bəxtim.az single-page frontend (no build step). Hash routes: #/, #/r/:id, #/new, #/me, #/how, #/verify/:id, #/admin */
 
 const CAT_ICON = { electronics: '🎧', phones: '📱', computers: '💻', home: '🛋️', appliances: '🧺', fashion: '👗', kids: '🧸', sports: '⚽', hobby: '🎨', auto_parts: '🔧', jewelry: '💍', other: '📦' };
 const CAT_BG = { electronics: '#e8f0ff', phones: '#e9f7ef', computers: '#eef0ff', home: '#fff3e6', appliances: '#e9f6f8', fashion: '#fdeef4', kids: '#fff7d6', sports: '#eaf6e9', hobby: '#f3ecff', auto_parts: '#eceff3', jewelry: '#fff0e1', other: '#f0f1f4' };

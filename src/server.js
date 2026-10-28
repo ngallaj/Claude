@@ -174,7 +174,7 @@ if (require.main === module) {
   const dataDir = process.env.DATA_DIR ?? path.join(ROOT, 'data');
   const uploadDir = path.join(dataDir, 'uploads');
   require('node:fs').mkdirSync(uploadDir, { recursive: true });
-  const db = open(path.join(dataDir, 'pusk.db'));
+  const db = open(path.join(dataDir, 'bextim.db'));
   const { app, raffles } = createApp({ db, uploadDir, secureCookies: process.env.NODE_ENV === 'production' });
   if (process.env.TRUST_PROXY) app.set('trust proxy', process.env.TRUST_PROXY);
 
@@ -189,7 +189,7 @@ if (require.main === module) {
   setInterval(runTick, 30_000).unref();
 
   const port = Number(process.env.PORT ?? 3000);
-  app.listen(port, () => console.log(`Püşk.az running on http://localhost:${port}`));
+  app.listen(port, () => console.log(`Bəxtim.az running on http://localhost:${port}`));
 }
 
 module.exports = { createApp };

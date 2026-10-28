@@ -1,4 +1,4 @@
-# Püşk.az
+# Bəxtim.az (bextim.az)
 
 A raffle marketplace for Azerbaijan. People list their belongings, the price is split into tickets, others buy
 tickets, and a random winner takes the item. It is like Raffall.com without the charity element, with Tap.az-style

@@ -52,8 +52,8 @@ window.I18N = {
     users: 'İstifadəçilər', filter: 'Filtr',
     verify_title: 'Püşkün yoxlanılması', verify_ok: '✔ Nəticə düzgündür', verify_bad: '✘ Uyğunsuzluq tapıldı', verify_wait: 'Püşk hələ atılmayıb.',
     verify_steps: 'Addımlar: 1) SHA-256(gizli açar) dərc olunmuş heşə bərabərdir. 2) Biletlərin siyahısından digest hesablanır. 3) HMAC-SHA256(gizli açar, "id:say:digest") — ilk 13 hex simvol ədədə çevrilir və bilet sayına bölünür; qalıq qalib biletin indeksidir.',
-    how_title: 'Püşk.az necə işləyir?',
-    footer: '© 2026 Püşk.az — Azərbaycanın püşk bazarı',
+    how_title: 'Bəxtim.az necə işləyir?',
+    footer: '© 2026 Bəxtim.az — Azərbaycanın püşk bazarı',
     errors: {
       validation: 'Formada səhvlər var', bad_credentials: 'Nömrə və ya şifrə yanlışdır', auth_required: 'Daxil olun', forbidden: 'İcazə yoxdur',
       not_active: 'Püşk aktiv deyil', own_raffle: 'Öz püşkünüzə bilet ala bilməzsiniz', insufficient_balance: 'Balans kifayət deyil',
@@ -127,7 +127,7 @@ window.I18N = {
     users: 'Пользователи', filter: 'Фильтр',
     verify_title: 'Проверка розыгрыша', verify_ok: '✔ Результат верен', verify_bad: '✘ Найдено несоответствие', verify_wait: 'Розыгрыш ещё не проведён.',
     verify_steps: 'Шаги: 1) SHA-256(ключ) совпадает с опубликованным хешем. 2) Из списка билетов считается digest. 3) HMAC-SHA256(ключ, "id:кол-во:digest") — первые 13 hex-символов переводятся в число, остаток от деления на число билетов — индекс победителя.',
-    how_title: 'Как работает Püşk.az?', footer: '© 2026 Püşk.az — рынок розыгрышей Азербайджана',
+    how_title: 'Как работает Bəxtim.az?', footer: '© 2026 Bəxtim.az — рынок розыгрышей Азербайджана',
     errors: {
       validation: 'В форме есть ошибки', bad_credentials: 'Неверный номер или пароль', auth_required: 'Войдите', forbidden: 'Нет доступа',
       not_active: 'Розыгрыш не активен', own_raffle: 'Нельзя покупать билеты своего розыгрыша', insufficient_balance: 'Недостаточно средств',
@@ -201,7 +201,7 @@ window.I18N = {
     users: 'Users', filter: 'Filter',
     verify_title: 'Draw verification', verify_ok: '✔ Result verified', verify_bad: '✘ Mismatch found', verify_wait: 'The draw hasn\'t happened yet.',
     verify_steps: 'Steps: 1) SHA-256(seed) equals the published hash. 2) A digest is computed from the ticket list. 3) HMAC-SHA256(seed, "id:count:digest") — the first 13 hex chars as a number, modulo the ticket count, is the winning index.',
-    how_title: 'How Püşk.az works', footer: '© 2026 Püşk.az — Azerbaijan\'s raffle marketplace',
+    how_title: 'How Bəxtim.az works', footer: '© 2026 Bəxtim.az — Azerbaijan\'s raffle marketplace',
     errors: {
       validation: 'Please fix the errors in the form', bad_credentials: 'Wrong number or password', auth_required: 'Please log in', forbidden: 'Not allowed',
       not_active: 'Raffle is not active', own_raffle: 'You can\'t buy tickets in your own raffle', insufficient_balance: 'Insufficient balance',

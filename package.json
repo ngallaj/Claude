@@ -1,7 +1,7 @@
 {
-  "name": "pusk-az",
+  "name": "bextim-az",
   "version": "0.1.0",
-  "description": "Püşk.az — raffle marketplace for Azerbaijan: sell your belongings by splitting them into tickets",
+  "description": "Bəxtim.az — raffle marketplace for Azerbaijan: sell your belongings by splitting them into tickets",
   "main": "src/server.js",
   "private": true,
   "scripts": {

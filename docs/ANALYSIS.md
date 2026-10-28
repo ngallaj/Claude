@@ -1,4 +1,4 @@
-# Püşk.az — Market analysis & product design
+# Bəxtim.az — Market analysis & product design
 
 > Note on sources: raffall.com and tap.az could not be opened directly from the build environment (network
 > policy), so this analysis combines Raffall's public help-centre articles found via search, app-store and
@@ -44,7 +44,7 @@ and the #2 shopping app on Google Play in Azerbaijan.
 **Takeaways for us:** copy the familiar UX (search + category icons + card grid + city filter, phone-number
 login, AZ/RU languages, ₼ prices), keep listing **free**, and plan VIP/boost as a second revenue stream later.
 
-## 3. Our concept — Püşk.az
+## 3. Our concept — Bəxtim.az
 
 *"Əşyanı sat — biletlərə böl — qalib aparsın"* (sell your item — split it into tickets — the winner takes it).
 
